@@ -15,15 +15,22 @@ public class Flipper : MonoBehaviour
     public bool isRight;
     private float newRotation;
 
+    AudioSource sfx;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sfx = this.GetComponent<AudioSource>();
     }
 
     void Update()
     {
         if (Input.GetKey(key))
         {
+            if(rb.rotation == minRotation)
+            {
+                sfx.Play();
+            }
             // 计算每帧的旋转量
             float rotationAmount = rotationSpeed * Time.deltaTime;
             // 计算新的旋转角度，但不超过最大角度

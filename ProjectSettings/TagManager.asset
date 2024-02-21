@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1329249783
+    locked: 0
+  - name: Pizza Topping
+    uniqueID: 2859507319
+    locked: 0
+  - name: Pizza
+    uniqueID: 3354321231
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ball&Frame
+    uniqueID: 2742738569
+    locked: 0
+  - name: Pineapple
+    uniqueID: 2206826931
     locked: 0
